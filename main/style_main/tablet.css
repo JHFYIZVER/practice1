@@ -282,6 +282,8 @@
   .tour-img img {
     opacity: 0.3;
     max-height: 160px;
+    border: none;
+    border-radius: 0;
     min-width: 230px;
   }
 

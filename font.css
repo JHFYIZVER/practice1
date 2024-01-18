@@ -1,35 +1,35 @@
 @font-face{
   font-family: 'Ubuntu-Regular';
-  src: url('/font/Ubuntu-Regular.ttf');
+  src: url('./font/Ubuntu-Regular.ttf');
   font-style: normal;
 }
 
 @font-face{
   font-family: 'Ubuntu-Bold';
-  src: url('/font/Ubuntu-Bold.ttf');
+  src: url('./font/Ubuntu-Bold.ttf');
   font-style: normal;
 }
 
 @font-face{
   font-family: 'Ubuntu-Medium';
-  src: url('/font/Ubuntu-Medium.ttf');
+  src: url('./font/Ubuntu-Medium.ttf');
   font-style: normal;
 }
 
 @font-face{
   font-family: 'Oxygen-Regular';
-  src: url('/font/Oxygen-Regular.ttf');
+  src: url('./font/Oxygen-Regular.ttf');
   font-style: normal;
 }
 
 @font-face{
   font-family: 'Hind Siliguri-Regular';
-  src: url('/font/HindSiliguri-Regular.ttf');
+  src: url('./font/HindSiliguri-Regular.ttf');
   font-style: normal;
 }
 
 @font-face{
   font-family: 'Hind Siliguri-Medium';
-  src: url('/font/HindSiliguri-Medium.ttf');
+  src: url('./font/HindSiliguri-Medium.ttf');
   font-style: normal;
 }

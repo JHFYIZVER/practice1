@@ -25,7 +25,7 @@ h3 {
   display: none;
 }
 
-.arrow__rotate{
+.arrow__rotate {
   transform: rotate(180deg);
 }
 
@@ -184,7 +184,7 @@ h3 {
   z-index: 2;
 }
 
-.detalied{
+.detalied {
   display: none;
 }
 
@@ -198,7 +198,7 @@ h3 {
   overflow: hidden;
 }
 
-.main_about-us-text-open{
+.main_about-us-text-open {
   max-height: none;
 }
 
@@ -228,11 +228,9 @@ h3 {
   margin-right: 10px;
 }
 
-
-
 /* Section__our-achievements */
 
-.tablet-achievements{
+.tablet-achievements {
   display: none;
 }
 
@@ -263,9 +261,7 @@ h3 {
   min-height: 72px;
 }
 
-
-
-.achievements-text{
+.achievements-text {
   color: #000;
   font-family: Hind Siliguri-Regular;
   font-size: clamp(10px, 2.3vw, 16px);
@@ -320,8 +316,12 @@ h3 {
 }
 
 .tour-img img {
+  opacity: 70%;
   max-width: 100%;
+  border: 1px solid #59bdff;
+  border-radius: 6px;
 }
+
 
 .tour-text {
   display: flex;
@@ -382,7 +382,7 @@ h3 {
   letter-spacing: 0.08px;
 }
 
-.show-all{
+.show-all {
   display: none;
 }
 
@@ -466,6 +466,7 @@ h3 {
 }
 
 .contact-specialists-btn {
+  cursor: pointer;
   color: #000;
   font-family: Ubuntu-Regular;
   font-size: clamp(8px, 4vw, 11px);
@@ -524,6 +525,12 @@ h3 {
   }
   100% {
     transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+  0% {
+    transform: translateX(0);
   }
 }
 
@@ -619,6 +626,7 @@ input:focus {
 
 .form__btn {
   color: #59bdff;
+  cursor: pointer;
   font-family: Ubuntu-Regular;
   font-size: 14px;
   font-style: normal;
@@ -679,12 +687,17 @@ input:focus {
   column-gap: 16px;
 }
 
+.footer-social__media img{
+  cursor: pointer;
+}
+
 .footer__list-block {
   display: flex;
   flex-direction: column;
 }
 
 .footer__list-item {
+  cursor: pointer;
   margin: 12px 25px;
   color: var(--B, #030d15);
   font-family: Hind Siliguri-Regular;
@@ -695,6 +708,7 @@ input:focus {
 }
 
 .footer__list-item:first-child {
+  cursor: default;
   color: #000;
   font-family: Ubuntu-Regular;
   font-size: 16px;

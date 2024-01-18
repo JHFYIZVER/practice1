@@ -4,6 +4,29 @@ const tourWrapper = document.getElementById("tour-wrapper");
 const mainText = document.getElementsByClassName("main_about-us-text");
 const readMore = document.getElementById("readMore");
 const arrow = document.getElementsByClassName("arrow");
+const authorisationForm = document.querySelector(".form");
+const buttonSubmit = document.querySelector(".form__btn");
+
+buttonSubmit.addEventListener("click", (event) => {
+  const name = document.getElementById("name").value;
+  const telephone = document.getElementById("tel").value;
+  const email = document.getElementById("email").value;
+  if (name === "" || telephone === "" || email === "") {
+    event.preventDefault(); // Предотвращаем отправку формы, если поля не заполнены
+    alert("Заполните все поля");
+  } else if (!/^\d+$/.test(telephone)) {
+    alert("Номер телефона должен состоять только из цифр");
+    event.preventDefault(); // Предотвращаем отправку формы, если номер телефона неверного формата
+  } else if (!/^[a-zA-Zа-яА-Я]+$/.test(name)) {
+    alert("Имя должно состоять только из букв");
+    event.preventDefault(); // Предотвращаем отправку формы, если имя неверного формата
+  } else {
+    localStorage.setItem("name", name);
+    localStorage.setItem("telephone", telephone);
+    localStorage.setItem("email", email);
+    alert("Форма отправлена"); // Форма будет отправлена только если все условия выполнены
+  }
+});
 
 function blurContentON() {
   burger.addEventListener("click", () => {
