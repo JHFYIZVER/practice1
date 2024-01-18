@@ -1,0 +1,459 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;
+    min-width: 768px;
+  }
+
+  .content__header {
+    max-width: 100%;
+    height: 88px;
+    position: absolute;
+  }
+
+  .burger-menu span {
+    width: 36px;
+    margin: 10px 0;
+  }
+
+  .tablet-link {
+    display: flex;
+    color: #fff;
+    font-family: Ubuntu-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 16.5px */
+    letter-spacing: 0.15px;
+    margin: 0 25px;
+  }
+
+  .tablet-link::before {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out 0s;
+  }
+
+  .tablet-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .tablet-link:nth-child(4) {
+   display: none;
+  }
+
+
+  .content__header-logo img {
+    min-width: 50px;
+  }
+
+  .conten-screensaver {
+    min-width: 768px;
+    max-width: 100%;
+  }
+
+  .blur-effect {
+    min-width: 110%;
+    height: 243px;
+    bottom: -120px;
+  }
+
+  /* Main */
+
+  .section__about-us {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    position: relative;
+    justify-content: center;
+  }
+
+  .img-background {
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .mounts {
+    min-height: 165px;
+  }
+
+  .section__about-us-text {
+    max-width: 50%;
+  }
+
+  .main_about-us-text {
+    max-height: 105px;
+  }
+
+  .main_about-us-text-open {
+    max-height: none;
+  }
+
+  .section__about-us-text h2 {
+    font-size: 32px;
+  }
+
+  .section__about-us-text p {
+    font-size: 16px;
+  }
+
+  .read-more {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  /* Achievements */
+
+  .tablet-achievements {
+    min-width: 524px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .achievements-img {
+    min-width: 524px;
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) minmax(140px, 1fr) minmax(
+        140px,
+        1fr
+      );
+    grid-template-rows: 140px 140px;
+    grid-gap: 11px;
+    grid-auto-flow: row;
+  }
+
+  .achievements-img-item1 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+  }
+
+  .achievements-img-item2 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+  }
+
+  .achievements-img-item3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+  }
+
+  .achievements-img-item4 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+  }
+
+  .achievements-img-item5 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+
+  .achievements-text-tablet {
+    margin: 0 30px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+
+    min-width: 524px;
+    display: grid;
+    grid-template-columns: minmax(330px, 1fr) minmax(330px, 1fr);
+    grid-template-rows: 70px;
+    grid-gap: 30px;
+
+    color: #000;
+    font-family: Hind Siliguri-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; /* 143.75% */
+  }
+
+  .achievements-text-icon {
+    width: 30px;
+  }
+
+  .achievements-text-item1 {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .achievements-text-item2 {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+  .achievements-text-item3 {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .achievements-text-item4 {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+  .achievements-text-item5 {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .achievements__swiper-pagination {
+    display: none;
+  }
+
+  .main__swiper-achievements {
+    display: none;
+  }
+
+  /* Tour */
+
+  .main__swiper-tour-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    max-height: 180px;
+  }
+
+  .main__swiper-tour-wrapper-open {
+    max-height: none;
+  }
+
+  .swiper-tour-item {
+    position: relative;
+    min-width: 230px;
+    min-height: 160px;
+    column-gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .tour-text {
+    position: relative;
+  }
+
+  .tour-img img {
+    opacity: 0.3;
+    max-height: 160px;
+    min-width: 230px;
+  }
+
+  .tour-btn {
+    max-width: 120px;
+  }
+
+  .show-all {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .tour-img {
+    max-width: 100%;
+    position: absolute;
+  }
+
+  .tour__swiper-pagination {
+    display: none;
+  }
+
+  /* Specialist */
+
+  .section__specialists {
+    position: relative;
+  }
+
+  .swiper-specialists-item {
+    margin-bottom: 60px;
+    min-width: 100%;
+  }
+
+  .specialists-img {
+    min-width: 210px;
+    min-height: 320px;
+  }
+
+  .specialists-img img {
+    width: 100%;
+    min-height: 320px;
+  }
+
+  .specialists-text {
+    min-height: 500%;
+    width: 30%;
+  }
+
+  .specialists-text h4 {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: #6bc8f2;
+
+    position: absolute;
+    margin: 0 68px;
+  }
+
+  .swiper-button-next::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+  }
+
+  .swiper-button-prev::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-135deg);
+  }
+
+  .contact-specialists-btn {
+    min-width: 185px;
+    min-height: 42px;
+
+    font-size: 15px;
+  }
+
+  .specialists__swiper-pagination {
+    display: none;
+  }
+
+  .specialists-text p {
+    display: flex;
+
+    overflow: hidden;
+
+    color: #000;
+    font-family: Hind Siliguri-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 19.5px */
+    letter-spacing: 0.15px;
+  }
+
+  /* Slider */
+
+  .gallery-img {
+    display: flex;
+    flex-direction: column;
+    min-width: 268px;
+  
+    animation: scroll 10s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .gallery-img:first-child {
+    margin-left: 50px;
+  }
+  
+  .gallery-img img {
+    max-width: 100%;
+    min-height: 147px;
+  }
+
+  /* Form */
+
+  .form__input input {
+    min-height: 59px;
+    min-width: 417px;
+  }
+
+  .section__form h3 {
+    font-size: 24px;
+  }
+
+  .form__btn {
+    min-width: 417px;
+    min-height: 60px;
+    font-size: 16px;
+  }
+
+  /* Footer */
+
+  .footer__logo {
+    width: 160px;
+  }
+
+  .icon__logo-footer {
+    min-width: 77px;
+  }
+
+  .footer-social__media img {
+    min-width: 30px;
+  }
+
+  .footer__copyright {
+    min-height: 51px;
+  }
+}

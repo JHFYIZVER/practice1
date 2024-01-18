@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #e7f5ff;
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 508px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo p {
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: -15px;
+  margin-bottom: 65px;
+  font-family: Oxygen-Regular;
+}
+
+.home {
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-family: Hind Siliguri-Regular;
+}
+
+.home::before {
+  content: "<";
+  margin-right: 10px;
+}
+
+/* Form */
+
+.window-authorisation {
+  background: #ecf7ff;
+  border-radius: 9px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 625px;
+  width: 508px;
+  padding: 0 30px;
+}
+
+.window-authorisation__title {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 18px 0 27px 0;
+  font-family: Ubuntu-Medium;
+}
+
+.window-authorisation__form__input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px 0;
+}
+
+.window-authorisation__form__input label {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-family: Ubuntu-Regular;
+}
+
+.window-authorisation__form__input input {
+  min-width: 448px;
+  height: 52px;
+  background: none;
+  border-radius: 6px;
+  border: 1px solid #000;
+  padding: 18px 14px;
+  font-family: Hind Siliguri-Regular;
+}
+
+.window-authorisation__form__input input:focus {
+  outline: none;
+}
+
+.window-authorisation__form__button {
+  margin-top: 15px;
+  
+}
+
+.window-authorisation__form__button button {
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 448px;
+  height: 52px;
+  border: 3px solid #59bdff;
+  border-radius: 6px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: Hind Siliguri-Regular;
+}
+
+.window-authorisation__form__check_box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  column-gap: 17px;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #59bdff;
+  border-radius: 6px;
+  display: inline-block;
+  position: relative;
+}
+
+.checkbox-custom::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+input[type="checkbox"]:checked + .checkbox-custom::after {
+  display: block;
+  content: "";
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.window-authorisation__form__check_box label {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Hind Siliguri-Regular;
+  cursor: pointer;
+}
+
+.hr-line {
+  margin-top: 24px;
+  min-width: 366px;
+}
+
+.window-authorisation__form__text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.window-authorisation__form__text p {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 5px 0;
+  font-family: Hind Siliguri-Regular;
+  color: #5a5a5a;
+}
+
+.window-authorisation__form__text a {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #5bc8ff;
+  text-decoration: none;
+  position: relative;
+  font-family: Ubuntu-Medium;
+}
+
+.window-authorisation__form__text a::before {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #5bc8ff;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out 0s;
+}
+
+.window-authorisation__form__text a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.user-agreement {
+  font-family: Hind Siliguri-Regular;
+  text-align: center;
+  color: #8e8e8e;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.user-agreement span {
+  text-decoration: underline;
+  cursor: pointer;
+}

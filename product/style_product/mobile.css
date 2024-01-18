@@ -1,0 +1,293 @@
+p {
+  margin: 0;
+}
+
+/* Menu-overlay */
+
+.menu-overlay {
+  position: sticky;
+  background-color: #ecf7ff;
+  border-top: 1px solid #000;
+  
+  width: 100%;
+  min-height: 88px;
+  z-index: 100;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.overlay-btn {
+  min-width: 108px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 3px solid #59bdff;
+  background: none;
+
+  color: #000;
+  text-align: center;
+  font-family: Hind Siliguri-Regular;
+  font-size: clamp(10px, 2vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 240% */
+}
+
+.menu-overlay__content-data {
+  color: #a4a4a4;
+  font-family: Hind Siliguri-Regular;
+  font-size: clamp(10px, 2vw, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  justify-content: space-between;
+}
+
+.menu-overlay__content-cost {
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu-Regular;
+  font-size: clamp(12px, 2vw, 20px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.menu-overlay__content-data,
+.menu-overlay__content-cost {
+  display: flex;
+  column-gap: 10px;
+  margin: 5px 0;
+}
+
+/* Mein */
+
+.title {
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu-Regular;
+  font-size: clamp(20px, 2vw, 48px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  margin: 27px;
+}
+
+.line-product {
+  margin: 10px auto;
+  background: #a9a9a9;
+  max-width: 90%;
+  
+}
+
+.content__main {
+  background-color: #e7f5ff;
+  box-shadow: 0px 4px 4px 0px rgba(139, 234, 255, 0.25);
+}
+
+.main__bread-crumbs {
+  display: flex;
+  column-gap: 5px;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+
+  color: #000;
+  font-family: Ubuntu;
+  font-size: clamp(10px, 2vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 11px */
+  letter-spacing: 0.1px;
+}
+
+.main__bread-crumbs a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* About-us */
+
+.swiper-picture-item {
+  max-height: 200px;
+}
+
+.swiper-picture-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.way-product {
+  padding: 0 19px;
+  max-height: 30px;
+}
+
+.way-product-list {
+  margin: 10px 0 0 0;
+  justify-content: space-between;
+  display: flex;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  background-color: #a7dcffd9;
+  border-radius: 50%;
+
+  color: #000;
+  font-family: Hind Siliguri-Regular;
+  font-size: 7px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.circle-active {
+  color: #fff;
+  background-color: #59bdff;
+}
+
+.way-product-list-item {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+
+  color: #000;
+  font-family: Hind Siliguri-Regular;
+  font-size: clamp(8px, 2vw, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.way-product-list-item p {
+  margin: 0;
+}
+
+.discription-tour-text {
+  font-family: Hind Siliguri-Regular;
+  font-size: clamp(10px, 2vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 10.4px */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 5px;
+  padding: 0 19px;
+  max-height: 110px;
+  overflow: hidden;
+}
+
+.read-more-btn {
+  margin: 10px 19px 0 19px;
+}
+
+.discription-tour-text__height {
+  max-height: none;
+}
+
+.hashtag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  padding: 10px 0 10px 19px;
+}
+
+.hashtag-item {
+  color: #000;
+  font-family: Hind Siliguri-Regular;
+  font-size: clamp(10px, 2vw, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+  padding: 4px 20px;
+  min-width: 76px;
+  border-radius: 6px;
+  border: 1px solid #000;
+}
+
+/* Specialist */
+
+.specialist {
+  display: flex;
+  padding: 10px 19px;
+}
+
+.specialist-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 5px;
+}
+
+.sub-title {
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: clamp(16px, 2vw, 40px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.specialist-name {
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: clamp(13px, 2vw, 28px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.discription-specialist {
+  color: #000;
+  font-family: Hind Siliguri-Regular;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 10.4px */
+  max-width: 80%;
+}
+
+.call-specialist {
+  border-radius: 6px;
+  border: 2px solid #59bdff;
+  background: none;
+  padding: 6px 20px;
+
+  color: #000;
+  font-family: Ubuntu-Regular;
+  font-size: 7px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 7.7px */
+  letter-spacing: 0.07px;
+  text-transform: capitalize;
+}
+
+.specialist-avatar {
+  
+}
+
+.specialist-avatar img{
+  max-width: 100%;
+  min-width: 60px;
+  border-radius: 50%;
+}

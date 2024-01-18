@@ -1,0 +1,731 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h2,
+h3 {
+  margin: 0;
+  color: #000;
+  font-family: Ubuntu-Regular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.blue-text {
+  color: #59bdff;
+  font-weight: 500;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.arrow__rotate{
+  transform: rotate(180deg);
+}
+
+/* Container */
+
+.container {
+  max-width: 100%;
+  min-width: 320px;
+}
+
+.blur-content {
+  opacity: 20%;
+  max-height: 100svh;
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+/* Header */
+
+.content__header {
+  min-width: 100%;
+  height: 50px;
+  background: rgba(176, 224, 255, 0.46);
+  backdrop-filter: blur(2px);
+
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 999;
+}
+
+.content__header-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__header-logo h1 {
+  font-family: Oxygen-Regular;
+  color: #fff;
+  margin: 0;
+
+  font-size: clamp(12px, 2vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 13.2px */
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+}
+
+.content__header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 25px;
+}
+
+.tablet-link {
+  position: relative;
+  display: none;
+}
+
+.sign__up-btn {
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background: none;
+  padding: 4px 14px;
+
+  color: #fff;
+  font-family: Ubuntu-Regular;
+  font-weight: 400;
+  font-size: clamp(10px, 2vw, 16px);
+  font-style: normal;
+  cursor: pointer;
+}
+
+.sign__up-btn:hover {
+  border: 1px solid #59bdff;
+}
+
+.burger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  display: block;
+  min-width: 20px;
+  height: 2px;
+  background: #fff;
+  margin: 4px 0;
+}
+
+/* Main */
+
+.wrapper-screensaver {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section__about-us */
+
+.section__about-us {
+  background: #e7f5ff;
+  box-shadow: 0px 4px 4px 0px rgba(139, 234, 255, 0.25);
+}
+
+.block-screensaver {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blur-effect {
+  position: absolute;
+  min-width: 120%;
+
+  height: 118px;
+
+  bottom: -60px;
+  background: #e7f5ff;
+  filter: blur(20px);
+  z-index: 99;
+}
+
+.conten-screensaver {
+  min-width: 320px;
+  max-width: 100%;
+}
+
+.section-background {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  background: #e7f5ff;
+}
+
+.img-background {
+  position: absolute;
+  z-index: 0;
+  max-width: 100%;
+  opacity: 0;
+}
+
+.mounts {
+  min-width: 208px;
+  height: 95px;
+  z-index: 2;
+}
+
+.detalied{
+  display: none;
+}
+
+.section__about-us-text {
+  z-index: 2;
+  padding: 25px 20px;
+}
+
+.main_about-us-text {
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.main_about-us-text-open{
+  max-height: none;
+}
+
+.section__about-us-text p {
+  color: #233750;
+  font-family: Hind Siliguri-Regular;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 14.3px */
+  letter-spacing: 0.11px;
+}
+
+.read-more {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 11px */
+  letter-spacing: 0.1px;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 10px;
+}
+
+
+
+/* Section__our-achievements */
+
+.tablet-achievements{
+  display: none;
+}
+
+.swiper-achievements-item {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__our-achievements {
+  margin-top: 3px;
+  background: #ecf7ff;
+  box-shadow: 0px 4px 4px rgba(139, 234, 255, 0.25);
+}
+
+.section-title {
+  text-align: center;
+  padding: 30px 0 18px 0;
+}
+
+.achievements-img {
+  max-width: 30%;
+}
+
+.achievements-img img {
+  max-width: 100%;
+  min-height: 72px;
+}
+
+
+
+.achievements-text{
+  color: #000;
+  font-family: Hind Siliguri-Regular;
+  font-size: clamp(10px, 2.3vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 160% */
+
+  display: flex;
+  max-width: 30%;
+  min-width: 170px;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 36px;
+
+  position: relative;
+}
+
+.swiper-pagination-bullet-active {
+  background: #85cfff;
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+}
+
+/* Section__our-tour */
+
+.section__our-tour {
+  margin-top: 3px;
+  background: #e7f5ff;
+  box-shadow: 0px 4px 4px rgba(139, 234, 255, 0.25);
+}
+
+.swiper-tour-item {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  text-align: center;
+  padding: 30px 0 18px 0;
+}
+
+.tour-img {
+  max-width: 40%;
+}
+
+.tour-img img {
+  max-width: 100%;
+}
+
+.tour-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tour-text h3 {
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu-Regular;
+  font-size: clamp(11px, 2.3vw, 16px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.achievements-tour {
+  color: #000;
+  font-family: Hind Siliguri-Regular;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 160% */
+
+  max-width: 169px;
+}
+
+.tour__swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 36px;
+
+  position: relative;
+}
+
+.tour-btn {
+  width: 100%;
+  min-width: 91px;
+  min-height: 21px;
+  border: 1px solid #59bdff;
+  background: none;
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+
+  padding: 6px 20px;
+  color: #000;
+  font-family: Ubuntu-Regular;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 8.8px */
+  letter-spacing: 0.08px;
+}
+
+.show-all{
+  display: none;
+}
+
+/* Specialists */
+
+.section__specialists {
+  margin-top: 3px;
+  background: #ecf7ff;
+  box-shadow: 0px 4px 4px rgba(139, 234, 255, 0.25);
+}
+
+.swiper-specialists-item {
+  min-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.specialists-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 30%;
+}
+
+.specialists-img img {
+  max-width: 100%;
+  min-height: 125px;
+}
+
+.specialists-text {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.specialists-text h3 {
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu-Regular;
+  font-size: clamp(13px, 4vw, 20px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.specialists-text h4 {
+  font-family: Ubuntu-Regular;
+  color: #8c8c8c;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: clamp(8px, 4vw, 11px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 9px 0 6px 0;
+}
+
+.specialists-text p {
+  display: none;
+}
+
+.social__media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.social__media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+}
+
+.contact-specialists-btn {
+  color: #000;
+  font-family: Ubuntu-Regular;
+  font-size: clamp(8px, 4vw, 11px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 8.8px */
+  letter-spacing: 0.08px;
+  text-transform: capitalize;
+
+  margin-top: 50px;
+  border-radius: 6px;
+  border: 1px solid #59bdff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 6px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70%;
+  min-height: 21px;
+}
+
+/* Gallery */
+
+.section_gallery {
+  margin-top: 3px;
+  background: #e7f5ff;
+  box-shadow: 0px 4px 4px rgba(139, 234, 255, 0.25);
+}
+
+.gallery__slider {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: space-between;
+  padding: 0;
+  column-gap: 50px;
+  width: 100%;
+}
+
+.gallery__slider::-webkit-scrollbar {
+  width: 0;
+}
+
+.gallery-img {
+  display: flex;
+  flex-direction: column;
+  min-width: 216px;
+
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.gallery-img:first-child {
+  margin-left: 50px;
+}
+
+.gallery-img img {
+  max-width: 100%;
+  height: 112.756px;
+}
+
+.gallery-img-date {
+  color: #8c8c8c;
+  text-align: end;
+  font-family: Ubuntu-Regular;
+  font-size: clamp(8px, 2vw, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 7px 12px;
+
+  border-radius: 0px 0px 6px 6px;
+  border-right: 3px solid #c5e8ff;
+  border-bottom: 3px solid #c5e8ff;
+  border-left: 3px solid #c5e8ff;
+  background: #d7efff;
+}
+
+/* Section__form */
+
+.section__form {
+  margin-top: 3px;
+  background: #ecf7ff;
+  box-shadow: 0px 4px 4px rgba(139, 234, 255, 0.25);
+}
+
+.section__form h2 {
+  padding-bottom: 0;
+}
+
+.section__form h3 {
+  text-align: center;
+  margin-top: 8px;
+  font-family: Ubuntu-Regular;
+  font-size: clamp(16px, 2vw, 24px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0 50px 0;
+}
+
+.form__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 14px 0;
+}
+
+.form__input input {
+  display: flex;
+  width: 50%;
+  min-width: 263px;
+  min-height: 38px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  background: none;
+
+  padding: 11px 16px;
+}
+
+.form__input input::placeholder {
+  color: #717171;
+  font-family: Hind Siliguri-Regular;
+  font-size: clamp(12px, 2vw, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 15.6px */
+  letter-spacing: 0.12px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form__btn {
+  color: #59bdff;
+  font-family: Ubuntu-Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 18.2px */
+  letter-spacing: 0.14px;
+  text-transform: capitalize;
+
+  border-radius: 6px;
+  border: 2px solid #59bdff;
+  background: none;
+  width: 50%;
+  min-width: 263px;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+
+.content__footer {
+  margin-top: 3px;
+  background: #f3faff;
+}
+
+.footer__logo {
+  padding-top: 25px;
+  margin-left: 15px;
+  width: 93px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 0;
+
+  color: #000;
+  text-align: right;
+  font-family: Oxygen-Regular;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 15.4px */
+  letter-spacing: 0.14px;
+  text-transform: uppercase;
+}
+
+.footer__logo p {
+  margin: -5px 0 8px 0;
+  font-size: clamp(12px, 2vw, 24px);
+}
+
+.icon__logo-footer {
+  width: 50px;
+}
+
+.footer-social__media {
+  display: flex;
+  column-gap: 16px;
+}
+
+.footer__list-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__list-item {
+  margin: 12px 25px;
+  color: var(--B, #030d15);
+  font-family: Hind Siliguri-Regular;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer__list-item:first-child {
+  color: #000;
+  font-family: Ubuntu-Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.footer__list-item:first-child::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 182px;
+  height: 1px;
+  background: #000;
+}
+
+.footer__copyright {
+  min-height: 38px;
+  background: #bfe5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--, #2f2222);
+  text-align: center;
+  font-family: Ubuntu-Regular;
+  font-size: clamp(8px, 2vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

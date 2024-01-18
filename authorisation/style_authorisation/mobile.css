@@ -1,0 +1,63 @@
+@media screen and (max-width: 530px) {
+  body {
+    background-color: #ecf7ff;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .home{
+    margin-left: 30px;
+  }
+
+  .logo p {
+    margin-bottom: 30px;
+  }
+
+  .window-authorisation {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: none;
+    box-shadow: none;
+  }
+
+  .window-authorisation__title {
+    font-size: 24px;
+  }
+
+  .window-authorisation__form__input{
+    margin: 18px 0;
+  }
+
+  .window-authorisation__form__input input {
+    min-width: 100%;
+    min-height: 36px;
+  }
+
+  .window-authorisation__form__button button {
+    min-width: 100%;
+    min-height: 36px;
+  }
+
+  .hr-line {
+    min-width: 262px;
+  }
+
+  .window-authorisation__form__text {
+    font-size: 10px;
+  }
+
+  .window-authorisation__form__text p {
+    font-size: 10px;
+  }
+
+  .window-authorisation__form__text a {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+}

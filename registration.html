@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./authorisation/style_authorisation/style.css"
+    />
+    <link rel="stylesheet" href="/authorisation/style_authorisation/mobile.css">
+    <link rel="stylesheet" href="/font.css" />
+    <script defer src="/registration/script_registration/script.js"></script>
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./img/authorisation/logo.svg" alt="" />
+        <p>Dream trip</p>
+      </div>
+      <a class="home" href="/index.html">На главную</a>
+      <div class="window-authorisation">
+        <h1 class="window-authorisation__title">Регистрация</h1>
+        <div class="window-authorisation__form">
+          <form class="authorisationForm">
+            <div class="window-authorisation__form__input">
+              <label for="tel">Номер телефона</label>
+              <input
+                id="tel"
+                type="tel"
+                name="tel"
+                placeholder="+7 (777) 777 77 77"
+              />
+            </div>
+            <div class="window-authorisation__form__input">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="mailname@gmail.com"
+              />
+            </div>
+            <div class="window-authorisation__form__input password__input">
+              <label for="password">Пароль</label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                placeholder="*****************"
+              />
+            </div>
+            <div class="window-authorisation__form__check_box">
+              <input type="checkbox" name="remember_me" id="remember_me" />
+              <span id="checkbox-click" class="checkbox-custom"></span>
+              <label for="remember_me">Я принимаю условия</label>
+            </div>
+            <div class="window-authorisation__form__button">
+              <button>Войти</button>
+            </div>
+          </form>
+          <hr class="hr-line" />
+          <div class="window-authorisation__form__text">
+            <p>
+              Уже зарегистрированы?
+              <a href="/authorisation.html">Войти</a>
+            </p>
+          </div>
+          <p class="user-agreement">
+            *Регистрируясь вы принимаете
+            <span>Пользовательское соглашение</span>, и подтверждаете, что
+            ознакомлены с <span>Политикой конфиденциальности</span>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
